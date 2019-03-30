@@ -25,6 +25,20 @@ var graphviz = dependencies.ToGraphViz();
 
 ![Dependency Graph](http://mikhail.io/2017/03/visualizing-dependency-tree-from-di-container/class-dependency-graph.png)
 
-### Read more
+### The fork
 
+This fork is to migrate Mikhail's repo in net452 to netcoreapp2.2.
+The migration is largely done through
+```
+dotnet tool install --global Project2015To2017.Migrate2017.Tool
+dotnet migrate-2017 wizard SimpleInjector.Visualization.sln
+```
+see https://github.com/hvanbakel/CsprojToVs2017
+
+the last step is to change to <TargetFramework>netcoreapp2.2</TargetFramework>.
+You can see the diff from commit history.
+
+
+
+### Read more
 [Visualizing Dependency Tree from DI Container](http://mikhail.io/2017/03/visualizing-dependency-tree-from-di-container/).
