@@ -38,6 +38,27 @@ see https://github.com/hvanbakel/CsprojToVs2017
 the last step is to change to <TargetFramework>netcoreapp2.2</TargetFramework>.
 You can see the diff from commit history.
 
+### Verify integrity
+
+```
+dotnet test
+```
+
+```
+Build started, please wait...
+Skipping running test for project ./SimpleInjector.Visualization/Source/Source.csproj. To run tests with dotnet test add "<IsTestProject>true<IsTestProject>" property to project file.
+Build completed.
+
+Test run for ./SimpleInjector.Visualization/Tests/bin/Debug/netcoreapp2.2/SimpleInjector.Visualisation.Tests.dll(.NETCoreApp,Version=v2.2)
+Microsoft (R) Test Execution Command Line Tool Version 15.9.0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+
+Total tests: 10. Passed: 10. Failed: 0. Skipped: 0.
+Test Run Successful.
+Test execution time: 1.8402 Seconds
+```
 
 
 ### Read more
